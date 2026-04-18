@@ -1,0 +1,17 @@
+master_url: "http://watcher.test"
+project_token: "prj_testtoken"
+report_interval: 30
+
+monitors:
+  - key: camera-giris
+    name: Giriş Kamerası
+    type: tcp
+    host: 192.168.1.100
+    port: 554
+    timeout: 5
+  - key: hgs-api
+    name: HGS API
+    type: http
+    url: "http://hgs.example.com/ping"
+    timeout: 10
+    interval: 60
